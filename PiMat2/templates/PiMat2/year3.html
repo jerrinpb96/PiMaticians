@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Year 3 Quiz</title>
+<link rel = "stylesheet" type = "text/css" href = "basestyle.css" />
+<script>
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, correct = 0;
+var questions = [
+  ["If I have 13 apples and my friend gave me 7 more apples, how many apples do I have in total?", "137", "17", "20", "21", "C"],
+  ["If Jack goes to school at 9:00 and he had a break from 12:00 to 13:15, how long was his break?", "75 minutes", "30 minutes", "1 hour", "60 minutes", "A"],
+  ["I think of a number and I halve it. My number is 7. What number did I think of?", "14", "15", "13", "3.5", "A"],
+  ["What is the fraction three quarters in decimals?", "0.15", "0.25", "0.5", "0.75", "D"],
+  ["There were 390 passengers on a jet to Australia, 201 passengers got off when it landed and 177 got on. How many passengers were now on the jet?", "591", "366", "189", "213", "B"],
+  ["What sign goes here? <br> 9 &#9744; 12 = &frac34;", "+", "-", "&#215;", "&divide", "D"],
+  ["How many metres is 210cm?", "21 metres", "2.1 metres", "2 metres", "0.21 metres", "B"],
+  ["Which is worth more &pound;1.59 or 169p?", "&pound;1.59", "169p", "Same", "Different currency" , "B"],
+  ["What is 88 to the nearest 10?", "80", "100", "90", "10", "C"],
+  ["If something turns in the opposite direction to the hands of a clock, what is it called?", "Anticlockwise", "Unclockwise", "Nonclockwise", "Clockwise", "A"],
+  ["What is this number in figures - three hundred and ninety two?", "300,92", "392", "3920", "3092", "B"],
+  ["What does the 0 represent in the number 302?", "10", "0 tens", "1,000", "100", "B"],
+  ["Which unit would you use to measure the ingredients for a brownie?", "Miles", "Centimetres", "Metres", "Grams", "D"],
+  ["A banana costs 7p less than a pear, a pear costs 22p. How much are 5 bananas?", "29p", "&pound;1.45", "75p", "15p", "C"]
+];  //multidimentional arrays; arrays within an array
+function _(x){
+	return document.getElementById(x);
+}
+function renderQuestion(){
+	test = _("test");
+	if(pos >= questions.length){
+		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct!<br><br>Refresh to start again</h2>";
+		_("test_status").innerHTML = "Test Completed";
+		pos = 0;
+		correct = 0;
+		return true;
+	}
+	_("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+	question = questions[pos][0];
+	chA = questions[pos][1];
+	chB = questions[pos][2];
+	chC = questions[pos][3];
+  chD = questions[pos][4];
+	test.innerHTML = "<h3>"+question+"</h3>";
+	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
+	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+	choices = document.getElementsByName("choices");
+	for(var i=0; i<choices.length; i++){
+		if(choices[i].checked){
+			choice = choices[i].value;
+		}
+	}
+	if(choice == questions[pos][5]){
+		correct++;
+	}
+	pos++;
+	renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+<div id = "container">
+    <div id = "header">
+    <h1>Year 3</h1>
+  </div>
+<div id = "content">
+  <div id = "nav">
+    <ul>
+      <p><li><a class = "selected" href = "homepage.html">  Home </a></li></p>
+      <p><li><a class = "c3" href = "year3mid.html">  Year 3</a></li></p>
+      <p><li><a class = "c4" href = ""> Year 4 </a></li></p>
+      <p><li><a class = "c5" href = ""> Year 5 </a></li></p>
+      <p><li><a class = "c6" href = ""> Year 6 </a></li></p>
+      <p><li><a class = "ctrack" href = ""> Track Progress </a></li></p>
+      <p><li><a class = "cgame" href = ""> Breakout </a></li></p>
+      <p><li><a class = "ca" href = ""> About us </a></li></p>
+    </ul>
+      </div>
+<div id = "years">
+<div id = "tests">
+<h2 id="test_status"></h2>
+<div id="test"> </div>
+</div>
+</div>
+</div>
+<div id = "footer">
+  Copyright &copy; 2016 PiMaticians.
+</div>
+</div>
+</body>
+</html>

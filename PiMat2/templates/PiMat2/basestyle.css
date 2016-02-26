@@ -1,0 +1,339 @@
+body {
+  background-color: #EEEEEE;
+  font-family: Helvetica;
+  background-image: url("picture2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+#container {
+  background-color: white;
+  width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-image: url("Computing Logo.jpg");*/
+  background-size: cover;
+}
+
+#header {
+  background-color: #FF3300;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin : 0;
+}
+
+#content {
+  padding: 10px;
+  background-color: white;
+}
+
+#nav {
+  width: 150px;
+  height: 283px;
+  float: left;
+  padding: 10px;
+}
+
+#nav ul {
+  list-style-type: none;
+  padding: 0px;
+  font-weight: bolder;
+}
+
+.selected{
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.c3{
+  color: #FF6633;
+}
+
+.c4{
+  color: #FF3399;
+}
+
+.c5{
+  color: #33CC33;
+}
+
+.ctrack{
+  color: #9900FF;
+}
+
+.cgame{
+  color: #00FFFF;
+}
+
+.ca{
+  color: #000000;
+}
+
+#years {
+  width : 600px;
+  float : left;
+  padding-left: 10px;
+}
+
+
+#years h2 {
+  padding-top: 35px;
+}
+
+#year3 {
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px;
+  text-align: center;
+  float: left;
+  border-radius: 25px;
+  background-image: url("kevinminion.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#year3 a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.select3{
+  color: #FF6633;
+  position: relative;
+  top: -34px
+}
+
+#year3q{
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px 15px 50px 50px;
+  text-align: center;
+  float: left;
+  border-radius: 25px;
+  background-image: url("dave3minion.jpg");
+  background-size: 177px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#year3q a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.select3q{
+  color: #0000FF;
+  position: relative;
+  top: -34px;
+}
+
+#year3sol{
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px 60px 50px 15px;
+  text-align: center;
+  float: right;
+  border-radius: 25px;
+  background-image: url("2minions.jpg");
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: 10px bottom;
+}
+
+#year3sol a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.select3sol{
+  color: #00FF00;
+  position: relative;
+  top: -34px
+}
+
+/* year5 */ #year4 {
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px;
+  text-align: center;
+  float: right;
+  border-radius: 25px;
+  background-image: url("minions.png");
+  background-size: 113px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#year4 a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.select5{
+  color: #33CC33;
+  position: relative;
+  top: -34px;
+}
+
+/* year 4 */ #year5 {
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px;
+  text-align: center;
+  float: right;
+  border-radius: 25px;
+  background-image: url("daveminion.jpg");
+  background-size: 145px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#year5 a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.select4{
+  display: block;
+  position: sticky;
+  -webkit-transform:rotate(324deg)
+}
+
+.select4 a{
+  color: #FF3399;
+  position: relative;
+  top: -30px;
+  left: 35px;
+}
+
+#year6 {
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px;
+  text-align: center;
+  float: left;
+  border-radius: 25px;
+  background-image: url("dave2minion.jpg");
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: 8px bottom;
+}
+
+#year6 a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.select6{
+  display: block;
+  position: sticky;
+  -webkit-transform: rotate(45deg);
+}
+
+.select6 a{
+  position: relative;
+  top: -20px;
+  right: 45px;
+}
+
+#track {
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px;
+  text-align: center;
+  float: right;
+  border-radius: 25px;
+  background-image: url("carlminion.png");
+  background-size: 180px 170px;
+  background-repeat: no-repeat;
+  background-position: -20px bottom;
+}
+
+#track a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.selecttrack{
+  color: #9900FF;
+  position: relative;
+  top: -34px;
+  right: -25px;
+}
+
+#game {
+  width: 170px;
+  height: 190px;
+  border: 5px groove orange;
+  margin: 10px;
+  text-align: center;
+  float: right;
+  border-radius: 25px;
+  background-image: url("breakout.jpg");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#game a{
+  display: block;
+  width: 170px;
+  height: 190px;
+}
+
+.selectgame{
+  color: #00FFFF;
+  position: relative;
+  bottom: -25px;
+}
+
+#footer {
+  text-align: right;
+}
+
+#test_status{
+  text-align: left;
+  float: left;
+  padding: 0px;
+  margin-top: -20px
+}
+
+#test{
+  text-align: center;
+  width: 600px;
+  height: 250px;
+  border: 5px groove orange;
+  color: #FF3300;
+  float: right;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+#tests{
+  float: right;
+  margin: 0px;
+  padding: 0px;
+}
